@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+</head>
+<body>
+
+    <h1>Welcome to the Mental Wellness Chatbot</h1>
+    <p>Start chatting with the chatbot!</p>
+
+    <!-- You can add an optional button to start the chatbot -->
+    <button onclick="chatbot()">Start Chat</button>
+
+    <script>
+        // Paste the JavaScript chatbot code here
+        function chatbot() {
+            alert("Chatbot: Hi, you can call me Druk :) I'm a friendly chatbot, hee hee...");
+            alert("Chatbot: You can type 'exit' to say bye to me!");
+
+            while (true) {
+                let userInput = prompt("You: ").toLowerCase();
+
+                if (userInput === "exit" || userInput === "bye") {
+                    alert("Chatbot: Goodbye! I felt nice talking to you, buddy :)");
+                    break;
+                } else if (userInput.includes("sad") || userInput.includes("depressed") || userInput.includes("down")) {
+                    alert("Chatbot: I'm really sorry you're feeling like this. Sometimes talking about it can help. Would you like to share what's been on your mind?");
+                } else if (userInput.includes("don't feel like talking") || userInput.includes("can't open up")) {
+                    alert("Chatbot: It's okay if you're not ready to talk right now. I'm here when you feel like sharing, and no pressure at all.");
+                } else if (userInput.includes("alone") || userInput.includes("no one understands")) {
+                    alert("Chatbot: You don't have to go through this alone. Sometimes it can help to talk to someone who will just listen. If you're ready, I'm here to listen.");
+                } else if (userInput.includes("feel hopeless") || userInput.includes("nothing matters")) {
+                    alert("Chatbot: I hear you. It's okay to feel this way. Life can feel overwhelming sometimes. You’re not alone in this.");
+                } else if (userInput.includes("need help") || userInput.includes("can't handle this")) {
+                    alert("Chatbot: It’s really brave of you to recognize that you might need help. Talking to a therapist or counselor can really make a difference. Would you like me to suggest resources for you?");
+                } else if (userInput.includes("can't cope") || userInput.includes("overwhelmed")) {
+                    alert("Chatbot: When everything feels overwhelming, breaking it down into small, manageable steps can help. Maybe you can start by taking a break and doing something small that makes you feel better.");
+                } else if (userInput.includes("don't deserve") || userInput.includes("can't be happy")) {
+                    alert("Chatbot: You absolutely deserve happiness and peace. Be kind to yourself, even when things feel difficult. It’s okay to not be okay.");
+                } else if (userInput.includes("can't see a way out") || userInput.includes("don't think things will get better")) {
+                    alert("Chatbot: I know things feel tough right now, but it’s important to remember that feelings do change. Things can improve with time, support, and care.");
+                } else if (userInput.includes("thank you")) {
+                    alert("Chatbot: You're welcome, buddy! I'm always here for you.");
+                } else {
+                    alert("Chatbot: Hmm... I'm not sure how to respond to that. Can you tell me more about how you're feeling?");
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
