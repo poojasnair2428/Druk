@@ -1,8 +1,14 @@
 body {
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-galaxy-background_23-2148973124.jpg?t=st=1737847288~exp=1737850888~hmac=5d63713598a9e10ececc4999f3f2ce31846f5de4651e0ec4ba3321be4d9f000d&w=996");
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Arial, sans-serif;
-    background-color: dodgerblue;
+    background-color: rgb(161, 201, 242);
     margin: 20px;
 }
+
 
 #chatbox {
     width: 60%;
@@ -20,7 +26,7 @@ body {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ddd;
-    background: #fff;
+    background: #5887f485;
     border-radius: 5px;
 }
 
@@ -42,5 +48,5 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #84b5e9;
 }

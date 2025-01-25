@@ -1,9 +1,20 @@
 <html>
-    <head><title>Druk</title>
-    <link rel="stylesheet" href="druk.css">
+    <head>
+        <title>Druk</title>
+        <link rel="stylesheet" href="druk.css">
     </head>
+    <style>
+        h1 {
+            margin: 0 0 20px;
+            font-size: 2.5rem;
+            text-align: center;
+            color: #333;
+        
+        }
+    </style>
 <body>
     <h1>Hii...I am Druk</h1>
+
     <div id="chatbox">
         <div id="chat"></div>
         <input type="text" id="userInput" placeholder="Type your message...">
@@ -11,35 +22,69 @@
     </div>
 
     <script>
-        function sendMessage() {
+        const apiKey = "AIzaSyCjnjgruISiMQYfPsK09_qmC13JqdmDbhc";
+        const apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + apiKey;
+
+        let conversationHistory = [];
+
+        async function sendMessage() {
             const userInput = document.getElementById('userInput').value;
             if (userInput === "") return;
+            console.log(conversationHistory);
+            
+            conversationHistory.push({ role: "client", text: userInput });
 
             
             document.getElementById('chat').innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
-            
+
             
             document.getElementById('userInput').value = '';
+
             
-            fetch('http://127.0.0.1:5000/chat', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ message: userInput })
-            })
-            .then(response => response.json())
-            .then(data => {
-                
-                document.getElementById('chat').innerHTML += `<p><strong>Druk:</strong> ${data.response}</p>`;
-            })
-            .catch(error => {
+            const conversationText = conversationHistory.map(entry => `${entry.role}: ${entry.text}`).join('\n');
+
+            // Prepare the payload for the Gemini API
+            const payload = {
+                contents: [{
+                    parts: [{
+                        text: `
+                            You are a mental healthcare professional. You are having a session with a client. Respond appropriately.
+                            ${conversationText}
+                            assistant: 
+                            Reply in plain text without any prefixes.
+                        `
+                    }]
+                }]
+            };
+
+            try {
+                // Call the Gemini API
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                const reply = data.candidates[0].content.parts[0].text;
+
+                // Add assistant's response to conversation history
+                conversationHistory.push({ role: "assistant", text: reply });
+
+                // Display Druk's response
+                document.getElementById('chat').innerHTML += `<p><strong>Druk:</strong> ${reply}</p>`;
+            } catch (error) {
+                console.error(error);
                 document.getElementById('chat').innerHTML += `<p><strong>Druk:</strong> Something went wrong, please try again later.</p>`;
-            });
+            }
         }
     </script>
-            
-
-
 </body>
 </html>
+
