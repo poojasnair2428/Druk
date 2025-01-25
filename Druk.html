@@ -1,7 +1,45 @@
 <html>
-    <head><title>Druk</title></head>
+    <head><title>Druk</title>
+    <link rel="stylesheet" href="druk.css">
+    </head>
 <body>
     <h1>Hii...I am Druk</h1>
+    <div id="chatbox">
+        <div id="chat"></div>
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            const userInput = document.getElementById('userInput').value;
+            if (userInput === "") return;
+
+            
+            document.getElementById('chat').innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
+            
+            
+            document.getElementById('userInput').value = '';
+            
+            fetch('http://127.0.0.1:5000/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: userInput })
+            })
+            .then(response => response.json())
+            .then(data => {
+                
+                document.getElementById('chat').innerHTML += `<p><strong>Druk:</strong> ${data.response}</p>`;
+            })
+            .catch(error => {
+                document.getElementById('chat').innerHTML += `<p><strong>Druk:</strong> Something went wrong, please try again later.</p>`;
+            });
+        }
+    </script>
+            
+
 
 </body>
 </html>
