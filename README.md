@@ -1,3 +1,4 @@
+
 # Druk: Mental Wellness Chatbot
 
 ## Hosted Project Link
@@ -55,7 +56,7 @@ Caption: A conversation in progress, showcasing user inputs and empathetic respo
 
 Caption: Demonstrates how the chatbot maintains a contextual conversation by using history.
 
-(Replace # with actual image URLs or paths)
+
 
 Contributing
 Contributions are welcome! Feel free to fork this repository and submit a pull request with your improvements or ideas.
