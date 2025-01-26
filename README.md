@@ -60,7 +60,7 @@ This project uses the [Gemini API](https://generativelanguage.googleapis.com/) f
 
 ## Demo
 
-![Druk Chatbot]("C:\Users\hp\OneDrive\Pictures\Screenshots\Screenshot 2025-01-26 084700.png")
+![Druk Chatbot]["C:\Users\hp\OneDrive\Pictures\Screenshots\Screenshot 2025-01-26 084700.png"]
 
 ## Contributing
 
