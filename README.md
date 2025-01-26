@@ -56,14 +56,17 @@ Caption: Demonstrates how the chatbot maintains a contextual conversation by usi
 
 ### Screenshots
 ![Screenshot 2025-01-26 084700](https://github.com/user-attachments/assets/74730d67-8218-4ab2-8c24-7ea10c1aa78e)
-
-
+![Screenshot 2025-01-26 094803](https://github.com/user-attachments/assets/c4fa62b8-f16e-4f0a-b322-156e3a759756)
+![Screenshot 2025-01-26 094905](https://github.com/user-attachments/assets/2eff7703-0916-45be-8d9d-aeea7062493a)
 
 Contributing
 Contributions are welcome! Feel free to fork this repository and submit a pull request with your improvements or ideas.
 
 License
 This project is licensed under the MIT License.
+
+
+
 
 
 
