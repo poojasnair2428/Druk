@@ -1,77 +1,87 @@
 # Druk: Mental Wellness Chatbot
 
-Druk is a simple and visually appealing mental wellness chatbot designed to provide empathetic and supportive messages to users. Built using HTML, CSS, and JavaScript, the chatbot leverages the Gemini API for generating content.
+## Hosted Project Link
+[Click here to view the hosted project](#) *(Replace `#` with the actual link once hosted)*
 
-## Features
+## Project Description
+Druk is a mental wellness chatbot designed to help users manage stress, anxiety, and emotional challenges. It provides empathetic responses, mindfulness tips, and a supportive space for users to express themselves.
 
-- **User-Friendly Interface**: A clean and calming interface with a galaxy-themed background.
-- **Interactive Chat**: Users can type messages and receive supportive responses from Druk.
-- **Empathetic Responses**: Druk offers guidance and strategies for mental wellness, avoiding medical advice.
-- **Dynamic Conversation**: Maintains a conversation history to provide context-aware responses.
+## The Problem Statement
+Managing mental wellness can be difficult in our fast-paced lives. Many people struggle to find immediate support or a safe space to vent their feelings without judgment.
 
-## Getting Started
+## The Solution
+Druk is your empathetic companion, always available to listen, provide calming advice, and guide you toward mindfulness and self-care in a friendly and interactive chat format.
 
-### Prerequisites
+---
 
-- A web browser to run the chatbot.
-- An active API key for the Gemini API.
+## Technical Details
 
-### Installation
+### Technologies/Components Used
 
-1. Clone this repository:
+#### For Software:
+- **Languages Used**: HTML, CSS, JavaScript
+- **Frameworks Used**: None
+- **Libraries Used**: None
+- **Tools Used**: Gemini API, Web Browser
+
+#### For Hardware:
+- Not applicable (hosted on the web, no special hardware required)
+
+---
+
+## Implementation
+
+### For Software:
+
+#### Installation
+1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/druk-chatbot.git
-   ```
+Navigate to the project directory:
+bash
+Copy
+Edit
+cd druk-chatbot
+Run
+Open the index.html file in any modern web browser.
+Project Documentation
+Screenshots
 
-2. Navigate to the project directory:
-   ```bash
-   cd druk-chatbot
-   ```
+Caption: The home screen of the chatbot, welcoming the user with a calming galaxy background.
 
-3. Open `index.html` in your web browser to run the chatbot.
 
-### Configuration
+Caption: A conversation in progress, showcasing user inputs and empathetic responses from Druk.
 
-- Replace the placeholder API key in the `apiKey` variable with your Gemini API key.
 
-```javascript
-const apiKey = "YOUR_API_KEY_HERE";
-```
+Caption: Demonstrates how the chatbot maintains a contextual conversation by using history.
 
-## File Structure
+(Replace # with actual image URLs or paths)
 
-- **index.html**: The main HTML structure of the chatbot.
-- **druk.css**: Contains the CSS for styling the chatbot interface.
+Contributing
+Contributions are welcome! Feel free to fork this repository and submit a pull request with your improvements or ideas.
 
-## API Integration
+License
+This project is licensed under the MIT License.
 
-This project uses the [Gemini API](https://generativelanguage.googleapis.com/) for generating empathetic and context-aware responses. Ensure you have an API key and proper access to the API before using the chatbot.
+sql
+Copy
+Edit
 
-## Usage
+Replace placeholders with actual content, like hosted project links or screenshots, when available.
 
-1. Type a message into the input field.
-2. Click the **Send** button or press **Enter**.
-3. View the responses from Druk in the chatbox.
 
-## Customization
 
-- **Styling**: Modify `druk.css` to change the appearance of the chatbot.
-- **Response Behavior**: Adjust the chatbot's behavior and tone by modifying the `payload` structure in the `sendMessage` function within `index.html`.
 
-## Demo
 
-![Druk Chatbot]("C:/Users/hp/OneDrive/Pictures/Screenshots/Screenshot 2025-01-26 084700.png")
 
-## Contributing
 
-Contributions are welcome! Feel free to open issues or submit pull requests to improve Druk.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
 
-## Acknowledgments
 
-- Galaxy background by [Freepik](https://www.freepik.com).
-- Powered by the Gemini API.
-```
+
+
+ChatGPT can make mistakes. Check important info.
+
+
+
