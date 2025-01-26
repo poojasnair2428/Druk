@@ -63,25 +63,5 @@ Contributions are welcome! Feel free to fork this repository and submit a pull r
 License
 This project is licensed under the MIT License.
 
-sql
-Copy
-Edit
-
-Replace placeholders with actual content, like hosted project links or screenshots, when available.
-
-
-
-
-
-
-
-
-
-
-
-
-
-ChatGPT can make mistakes. Check important info.
-
 
 
