@@ -1,7 +1,7 @@
 # Druk: Mental Wellness Chatbot
 
 ## Hosted Project Link
-[Click here to view the hosted project](#) *(Replace `#` with the actual link once hosted)*
+[https://poojasnair2428.github.io/]
 
 ## Project Description
 Druk is a mental wellness chatbot designed to help users manage stress, anxiety, and emotional challenges. It provides empathetic responses, mindfulness tips, and a supportive space for users to express themselves.
