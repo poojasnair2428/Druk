@@ -38,10 +38,8 @@ Druk is your empathetic companion, always available to listen, provide calming a
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/druk-chatbot.git
-Navigate to the project directory:
-bash
-Copy
-Edit
+Navigate to the project directory:bash
+
 cd druk-chatbot
 Run
 Open the index.html file in any modern web browser.
