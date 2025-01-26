@@ -60,7 +60,7 @@ This project uses the [Gemini API](https://generativelanguage.googleapis.com/) f
 
 ## Demo
 
-![Druk Chatbot](https://img.freepik.com/free-vector/hand-painted-watercolor-galaxy-background_23-2148973124.jpg)
+![Druk Chatbot]("C:\Users\hp\OneDrive\Pictures\Screenshots\Screenshot 2025-01-26 084700.png")
 
 ## Contributing
 
