@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Druk</title>
+        <title>Orion</title>
         <link rel="stylesheet" href="druk.css">
     </head>
     <style>
@@ -8,12 +8,12 @@
             margin: 0 0 20px;
             font-size: 2.5rem;
             text-align: center;
-            color: #333;
+            color: #03035f;
         
         }
     </style>
 <body>
-    <h1>Hii...I am Druk</h1>
+    <h1>Hello! I'm Druk.</h1>
 
     <div id="chatbox">
         <div id="chat"></div>
@@ -43,12 +43,12 @@
             
             const conversationText = conversationHistory.map(entry => `${entry.role}: ${entry.text}`).join('\n');
 
-            // Prepare the payload for the Gemini API
+            
             const payload = {
                 contents: [{
                     parts: [{
                         text: `
-                            You are a mental healthcare professional. You are having a session with a client. Respond appropriately.
+                            you are a mental wellness chatbot designed to help users manage stress, anxiety, and other emotional challenges. your goal is to offer guidance, listening, and simple strategies for coping in a positive, calming, and supportive manner.You are having a session with a client. Respond with empathetic, understanding messages that encourage the user to reflect, breathe, and practice self-care. Avoid giving medical advice but offer general suggestions for mental wellness and mindfulness. Keep responses short, gentle, and welcoming.
                             ${conversationText}
                             assistant: 
                             Reply in plain text without any prefixes.
@@ -58,7 +58,7 @@
             };
 
             try {
-                // Call the Gemini API
+                
                 const response = await fetch(apiUrl, {
                     method: 'POST',
                     headers: {
@@ -74,10 +74,10 @@
                 const data = await response.json();
                 const reply = data.candidates[0].content.parts[0].text;
 
-                // Add assistant's response to conversation history
+                
                 conversationHistory.push({ role: "assistant", text: reply });
 
-                // Display Druk's response
+                
                 document.getElementById('chat').innerHTML += `<p><strong>Druk:</strong> ${reply}</p>`;
             } catch (error) {
                 console.error(error);
