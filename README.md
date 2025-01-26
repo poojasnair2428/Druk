@@ -54,6 +54,9 @@ Caption: A conversation in progress, showcasing user inputs and empathetic respo
 
 Caption: Demonstrates how the chatbot maintains a contextual conversation by using history.
 
+### Screenshots
+![Screenshot 2025-01-26 084700](https://github.com/user-attachments/assets/74730d67-8218-4ab2-8c24-7ea10c1aa78e)
+
 
 
 Contributing
