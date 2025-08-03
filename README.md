@@ -62,8 +62,7 @@ Caption: Demonstrates how the chatbot maintains a contextual conversation by usi
 Contributing
 Contributions are welcome! Feel free to fork this repository and submit a pull request with your improvements or ideas.
 
-License
-This project is licensed under the MIT License.
+
 
 
 
